@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.default-btn {
+  @apply block bg-[#202020] rounded-lg py-2.5 text-center text-xs font-bold text-white;
+}
+
+.nav_item_container {
+  @apply flex;
+}
+
+.nav_menu_link {
+  @apply block;
+}
+
+.nav_menu_item {
+  @apply flex items-center px-2 py-1.5;
+}
+
+.nav_menu_icon {
+  @apply w-6 h-6 mr-3.5;
+}
+
+.nav_menu_icon svg {
+  @apply fill-menugrey;
+}
+
+.nav_menu_icon.no-fill svg {
+  @apply fill-none stroke-menugrey;
+}
+
+.nav_menu_title {
+  @apply text-menugrey text-xs font-medium;
+}
+
+.nav_menu_link.active .nav_menu_item {
+  @apply bg-[rgba(0,_255,_25,_0.20)];
+}
+
+.nav_menu_link.active .nav_menu_title {
+  @apply text-[#5F5F5F];
+}
+
+.nav_menu_link.active .nav_menu_icon svg {
+  @apply fill-[#2F2F2F];
+}
+
+.nav_menu_link.active .nav_menu_icon.no-fill svg {
+  @apply fill-none stroke-[#2F2F2F];
+}
+
+.nav_menu_divide {
+  display: flex;
+  height: 66px;
+  width: 1px;
+  align-items: center;
+  background-color: #C5CDC5;
+}

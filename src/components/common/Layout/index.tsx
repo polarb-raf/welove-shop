@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import Header from '@components/common/Nav';
+import Header from '@components/common/Header';
 
 const Layout = ({ children }: { children: ReactElement }) => {
   return (

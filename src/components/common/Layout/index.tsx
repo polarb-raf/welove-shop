@@ -1,11 +1,11 @@
 import { ReactElement } from 'react';
 
-import Nav from '@components/common/Nav';
+import Header from '@components/common/Nav';
 
 const Layout = ({ children }: { children: ReactElement }) => {
   return (
     <div>
-      <Nav />
+      <Header />
       {children}
     </div>
   );
